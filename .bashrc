@@ -27,18 +27,18 @@ set -o vi
 export EDITOR="vimx"
 
 alias handle_res='test -d "$selected_res" && cd "$selected_res" ; \
-    test -f "$selected_res" && cd $(dirname "$selected_res") && vimx $(basename "$selected_res")'
+    test -f "$selected_res" && cd $(dirname "$selected_res") && $EDITOR $(basename "$selected_res")'
 alias copy_or_move_helper='selected_res=$(fd . "$HOME" | fzy -l 50) && \
     dest_dir=$(fd --type d . "$HOME" | fzy -l 50) && \
     test -z "$dest_dir" && dest_dir="./"'
-alias cf='copy_or_move_helper ; \
+alias cf='copy_or_move_helper ; \ 
     test -d "$selected_res" && cp -r "$selected_res" "$dest_dir" ; \
     test -f "$selected_res" && cp "$selected_res" "$dest_dir"'
 
 ro() {
     selected_res=$(rg -l -g "!tags" "$1" | fzy -l 50)
     test -z "$selected_res" && return
-    vimx +/"$1" "$selected_res" 
+    $EDITOR +/"$1" "$selected_res" 
     lo "$1"
 }
 f() {
@@ -62,11 +62,11 @@ alias mf='copy_or_move_helper ; mv "$selected_res" "$dest_dir"'
 alias o='selected_res=$(fd . "$PWD" | fzy -l 50) ; handle_res'
 alias ba='echo $PWD >> "$XDG_DATA_HOME"/marks ; sort "$XDG_DATA_HOME"/marks | uniq > "$XDG_DATA_HOME"/marks.tmp && mv "$XDG_DATA_HOME"/marks.tmp "$XDG_DATA_HOME"/marks'
 alias bj='selected=$(cat "$XDG_DATA_HOME"/marks | fzy -l 50) && cd "$selected"'
-alias be='vimx "$XDG_DATA_HOME"/marks'
-alias ce='vimx "$HOME"/.bashrc ; source "$HOME"/.bashrc'
+alias be='$EDITOR "$XDG_DATA_HOME"/marks'
+alias ce='$EDITOR "$HOME"/.bashrc ; source "$HOME"/.bashrc'
 alias p='fd --type f -d 1 | xargs less'
 alias c='cd'
-alias v='vimx'
+alias v='$EDITOR'
 alias l='ls -A --color=auto -1 -p'
 alias h='eval $(history 0 | fzy | awk "{\$1=\"\"; print \$0}" | xargs)'
 alias ga='git add --all'
