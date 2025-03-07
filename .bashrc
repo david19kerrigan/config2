@@ -43,7 +43,7 @@ ro() {
 }
 f() {
     clear ; echo $PWD
-    selected_res=$(ls -1 -a | sed '1 d' | fzy -l 50)
+    selected_res=$(ls -1 -a -F | sed '1 d' | fzy -l 50)
     test -z "$selected_res" && return
     handle_res
     f
