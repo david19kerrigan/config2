@@ -1,3 +1,3 @@
-ln $PWD/.bashrc -sf ~/.bashr
-ln $PWD/.vimrc -sf ~/.vimrc
-ln $PWD/.vimrc -sf ~/.vim
+ln -sf $PWD/.bashrc ~/.bashrc
+ln -sf $PWD/.vimrc ~/.vimrc
+ln -sf $PWD/.vimrc ~/.vim
