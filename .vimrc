@@ -9,3 +9,4 @@ set softtabstop=4
 set expandtab
 set noswapfile
 let @c='gg"+yG'''''
+imap jj <Esc>

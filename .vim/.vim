@@ -1,0 +1,1 @@
+/home/david/Documents/config2/.vim
