@@ -8,5 +8,6 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set noswapfile
+set fillchars=eob:\ 
 let @c='gg"+yG'''''
 imap jj <Esc>

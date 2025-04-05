@@ -43,3 +43,6 @@
 (ido-mode 1)
 
 (global-set-key (kbd "C-<tab>") (lambda () (interactive) (switch-to-buffer (other-buffer (current-buffer) 1))))
+(global-set-key (kbd "C-c l") 'compile)
+
+(setq shell-command-switch "-ic")
