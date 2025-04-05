@@ -3,3 +3,4 @@ ln -sf $PWD/.vimrc ~/.vimrc
 ln -sf $PWD/.vim ~/.vim
 ln -sf $PWD/.tmux.conf ~/.tmux.conf
 ln -sf $PWD/alacritty ~/.config/
+ln -sf $PWD/.emacs ~/.emacs

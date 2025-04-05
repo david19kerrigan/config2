@@ -31,11 +31,15 @@
 (setq c-basic-offset 4)
 
 (load-theme 'catppuccin :no-confirm)
+(setq catppuccin-flavor 'mocha) 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
-(set-face-attribute 'default nil :font "JetBrains Mono-13")
+(set-face-attribute 'default nil :font "JetBrains Mono-14")
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
 
 (setq evil-want-C-u-scroll t)
 (require 'evil)
 (evil-mode 1)
+(ido-mode 1)
+
+(global-set-key (kbd "C-<tab>") (lambda () (interactive) (switch-to-buffer (other-buffer (current-buffer) 1))))
