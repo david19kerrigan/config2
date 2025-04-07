@@ -46,3 +46,7 @@
 (global-set-key (kbd "C-c l") 'compile)
 
 (setq shell-command-switch "-ic")
+
+(setq use-short-answers t)
+(setq scroll-step            1
+      scroll-conservatively  10000)

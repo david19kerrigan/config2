@@ -9,5 +9,6 @@ set softtabstop=4
 set expandtab
 set noswapfile
 set fillchars=eob:\ 
+set laststatus=2
 let @c='gg"+yG'''''
 imap jj <Esc>
