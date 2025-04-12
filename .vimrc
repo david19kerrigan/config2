@@ -12,4 +12,3 @@ set fillchars=eob:\
 set laststatus=2
 set clipboard=unnamedplus
 let @c='gg"+yG'''''
-imap jk <Esc>
