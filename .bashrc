@@ -44,7 +44,7 @@ ro() {
 }
 f() {
     clear ; echo $PWD
-    selected_res=$(ls -1 -a -F | sed '1 d' | $finder)
+    selected_res=$(ls -1 -a -F --indicator-style=none | sed '1 d' | $finder)
     test -z "$selected_res" && return
     handle_res
     f
@@ -74,6 +74,6 @@ alias ga='git add --all'
 alias gu='git pull'
 alias gb="git branch"
 alias gc="git checkout \$(git branch | $finder 30)"
-alias up="sudo dnf upgrade --refresh"
+alias up="sudo dnf upgrade --refresh -y"
 alias pys='source ~/.local/pip/venvs/env1/bin/activate'
 

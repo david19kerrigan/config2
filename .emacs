@@ -48,5 +48,6 @@
 (setq shell-command-switch "-ic")
 
 (setq use-short-answers t)
-(setq scroll-step            1
-      scroll-conservatively  10000)
+(setq scroll-step 1
+    scroll-conservatively 10000)
+(put 'dired-find-alternate-file 'disabled nil)
