@@ -30,6 +30,18 @@ finder='fzy -l 50'
 alias handle_res='test -d "$selected_res" && cd "$selected_res" ; \
     test -f "$selected_res" && cd $(dirname "$selected_res") && $EDITOR $(basename "$selected_res")'
 
+fd() {
+    selected_res=$(find -name *"$1"* | $finder)
+    test -z "$selected_res" && return
+    $EDITOR "$selected_res"
+    fd "$1"
+}
+gr() {
+    selected_res=$(grep -l -r "$1" | $finder)
+    test -z "$selected_res" && return
+    $EDITOR +/"$1" "$selected_res"
+    gr "$1"
+}
 f() {
     clear ; echo $PWD
     selected_res=$(ls -1 -a -F --indicator-style=none | sed '1 d' | $finder)
