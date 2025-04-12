@@ -1,7 +1,3 @@
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_DATA_HOME=$HOME/.local/share
-export XDG_STATE_HOME=$HOME/.local/state
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -22,6 +18,10 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_STATE_HOME=$HOME/.local/state
 
 set -o vi
 export EDITOR="vimx"
@@ -52,7 +52,7 @@ f() {
 gm() { git commit -a -m "$1" && git push; }
 cl() { readlink -f "$1" | xclip -sel clip; }
 
-alias o='selected_res=$(fd . "$PWD" | $finder) ; handle_res'
+alias o='selected_res=$(find -type d | $finder) ; handle_res'
 alias ba='echo $PWD >> "$XDG_DATA_HOME"/marks ; sort "$XDG_DATA_HOME"/marks | uniq > "$XDG_DATA_HOME"/marks.tmp && mv "$XDG_DATA_HOME"/marks.tmp "$XDG_DATA_HOME"/marks'
 alias bj='selected=$(cat "$XDG_DATA_HOME"/marks | $finder) && cd "$selected"'
 alias be='$EDITOR "$XDG_DATA_HOME"/marks'
