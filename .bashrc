@@ -45,7 +45,7 @@ gr() {
 f() {
     clear ; echo $PWD
     selected_res=$(ls -1 -a -F --indicator-style=none | sed '1 d' | $menu)
-    test -z "$selected_res" && return
+    test -z "$selected_res" && clear && return
     handle_res
     f
 }
@@ -62,6 +62,6 @@ alias l='ls -A --color=auto -1 -p'
 alias ga='git add --all'
 alias gu='git pull'
 alias gb="git branch"
-alias gc="git checkout \$(git branch | $menu 30)"
+alias gc="git checkout \$(git branch | $menu)"
 alias up="sudo dnf upgrade --refresh -y"
 
