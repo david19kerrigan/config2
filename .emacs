@@ -3,7 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(evil catppuccin-theme)))
+ '(package-selected-packages '(evil-collection flx-ido evil catppuccin-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -38,9 +38,15 @@
 (setq display-line-numbers-type 'relative)
 
 (setq evil-want-C-u-scroll t)
+(setq evil-want-keybinding nil)
+
 (require 'evil)
 (evil-mode 1)
 (ido-mode 1)
+
+(when (require 'evil-collection nil t)
+  (evil-collection-init))
+
 
 (global-set-key (kbd "C-<tab>") (lambda () (interactive) (switch-to-buffer (other-buffer (current-buffer) 1))))
 (global-set-key (kbd "C-c l") 'compile)
@@ -53,4 +59,29 @@
 (put 'dired-find-alternate-file 'disabled nil)
 
 (global-set-key (kbd "<escape>")      'keyboard-escape-quit)
+
+(keyboard-translate ?\C-a ?\C-x)
+
+(require 'flx-ido)
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+;; disable ido faces to see flx highlights.
+(setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
+
+(global-set-key (kbd "C-l") 'next-buffer)
+(global-set-key (kbd "C-h") 'previous-buffer)
+(global-set-key (kbd "C-x t") 'shell)
+(global-set-key (kbd "C-x i") 'ibuffer)
+
+(setq ibuffer-saved-filter-groups
+ '(("MyList"
+    ("Cpp"     (filename      . ".cpp"))
+    ("Shell"   (name          . "*shell\\*"))
+    ("Dired"   (mode          . dired-mode))
+    ("Org"     (filename      . ".org")))))
+(add-hook 'ibuffer-mode-hook
+ (lambda ()
+  (ibuffer-switch-to-saved-filter-groups "MyList")))
 
