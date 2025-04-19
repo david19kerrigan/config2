@@ -73,7 +73,8 @@ if &background == 'dark'
   endif
 
   let s:transp_bg = get(g:, 'gruvbox_transp_bg', 0)
-  let s:supports_italic = has('gui_running') || has('nvim') || (&t_ZH != '' && &t_ZH != '[7m' && !has('win32'))
+  " let s:supports_italic = has('gui_running') || has('nvim') || (&t_ZH != '' && &t_ZH != '[7m' && !has('win32'))
+  let s:supports_italic = 0
   let s:italic = get(g:, 'gruvbox_italics', get(g:, 'gruvbox_italic', 1)) && s:supports_italic
   let s:italicize_strings = get(g:, 'gruvbox_italicize_strings', 1) && s:supports_italic
   let s:bold = get(g:, 'gruvbox_bold', 1)
