@@ -1,7 +1,7 @@
 set nu rnu
 set background=dark
-set notermguicolors
-colorscheme solarized
+set termguicolors
+colorscheme gruvbox8
 syntax on
 filetype plugin indent on
 set tabstop=4

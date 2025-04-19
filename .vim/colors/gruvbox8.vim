@@ -147,7 +147,7 @@ if &background == 'dark'
   hi Label guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE
   hi LineNr guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE
   hi Macro guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE
-  hi MatchParen guifg=NONE guibg=#504945 guisp=NONE gui=bold,underline
+  hi MatchParen guifg=NONE guibg=#504945 guisp=NONE gui=bold
   hi ModeMsg guifg=#fabd2f guibg=NONE guisp=NONE gui=bold
   hi MoreMsg guifg=#fabd2f guibg=NONE guisp=NONE gui=bold
   hi NonText guifg=#504945 guibg=NONE guisp=NONE gui=NONE
@@ -205,7 +205,7 @@ if &background == 'dark'
       hi Error gui=reverse
       hi ErrorMsg gui=NONE
       hi Function gui=NONE
-      hi MatchParen gui=underline
+      hi MatchParen gui=NONE
       hi ModeMsg gui=NONE
       hi MoreMsg gui=NONE
       hi PmenuSel gui=NONE
@@ -784,7 +784,7 @@ if &background == 'dark'
     hi Label ctermfg=203 ctermbg=NONE cterm=NONE
     hi LineNr ctermfg=243 ctermbg=NONE cterm=NONE
     hi Macro ctermfg=107 ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=NONE ctermbg=239 cterm=bold,underline
+    hi MatchParen ctermfg=NONE ctermbg=239 cterm=bold
     hi ModeMsg ctermfg=214 ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=214 ctermbg=NONE cterm=bold
     hi NonText ctermfg=239 ctermbg=NONE cterm=NONE
@@ -840,7 +840,7 @@ if &background == 'dark'
       hi Error cterm=reverse
       hi ErrorMsg cterm=NONE
       hi Function cterm=NONE
-      hi MatchParen cterm=underline
+      hi MatchParen cterm=NONE
       hi ModeMsg cterm=NONE
       hi MoreMsg cterm=NONE
       hi PmenuSel cterm=NONE
@@ -1440,7 +1440,7 @@ if &background == 'dark'
     hi Label ctermfg=Red ctermbg=NONE cterm=NONE
     hi LineNr ctermfg=DarkGray ctermbg=NONE cterm=NONE
     hi Macro ctermfg=Cyan ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=NONE ctermbg=Black cterm=bold,underline
+    hi MatchParen ctermfg=NONE ctermbg=Black cterm=bold
     hi ModeMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi NonText ctermfg=DarkGray ctermbg=NONE cterm=NONE
@@ -1495,7 +1495,7 @@ if &background == 'dark'
       hi Directory cterm=NONE
       hi ErrorMsg cterm=NONE
       hi Function cterm=NONE
-      hi MatchParen cterm=underline
+      hi MatchParen cterm=NONE
       hi ModeMsg cterm=NONE
       hi MoreMsg cterm=NONE
       hi Question cterm=NONE
@@ -1583,7 +1583,7 @@ if &background == 'dark'
     hi Label ctermfg=Red ctermbg=NONE cterm=NONE
     hi LineNr ctermfg=Gray ctermbg=NONE cterm=NONE
     hi Macro ctermfg=Cyan ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=Gray ctermbg=NONE cterm=bold,underline
+    hi MatchParen ctermfg=Gray ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi NonText ctermfg=Gray ctermbg=NONE cterm=NONE
@@ -1638,7 +1638,7 @@ if &background == 'dark'
       hi Directory cterm=NONE
       hi ErrorMsg cterm=NONE
       hi Function cterm=NONE
-      hi MatchParen cterm=underline
+      hi MatchParen cterm=NONE
       hi ModeMsg cterm=NONE
       hi MoreMsg cterm=NONE
       hi Question cterm=NONE
@@ -1726,7 +1726,7 @@ if &background == 'dark'
     hi Label term=NONE
     hi LineNr term=reverse
     hi Macro term=NONE
-    hi MatchParen term=bold,underline
+    hi MatchParen term=bold
     hi ModeMsg term=NONE
     hi MoreMsg term=NONE
     hi NonText term=NONE
@@ -1951,7 +1951,7 @@ if &background == 'light'
   hi Label guifg=#9d0006 guibg=NONE guisp=NONE gui=NONE
   hi LineNr guifg=#a89984 guibg=NONE guisp=NONE gui=NONE
   hi Macro guifg=#427b58 guibg=NONE guisp=NONE gui=NONE
-  hi MatchParen guifg=NONE guibg=#d5c4a1 guisp=NONE gui=bold,underline
+  hi MatchParen guifg=NONE guibg=#d5c4a1 guisp=NONE gui=bold
   hi ModeMsg guifg=#b57614 guibg=NONE guisp=NONE gui=bold
   hi MoreMsg guifg=#b57614 guibg=NONE guisp=NONE gui=bold
   hi NonText guifg=#d5c4a1 guibg=NONE guisp=NONE gui=NONE
@@ -2009,7 +2009,7 @@ if &background == 'light'
       hi Error gui=reverse
       hi ErrorMsg gui=NONE
       hi Function gui=NONE
-      hi MatchParen gui=underline
+      hi MatchParen gui=NONE
       hi ModeMsg gui=NONE
       hi MoreMsg gui=NONE
       hi PmenuSel gui=NONE
@@ -2588,7 +2588,7 @@ if &background == 'light'
     hi Label ctermfg=124 ctermbg=NONE cterm=NONE
     hi LineNr ctermfg=137 ctermbg=NONE cterm=NONE
     hi Macro ctermfg=29 ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=NONE ctermbg=187 cterm=bold,underline
+    hi MatchParen ctermfg=NONE ctermbg=187 cterm=bold
     hi ModeMsg ctermfg=172 ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=172 ctermbg=NONE cterm=bold
     hi NonText ctermfg=187 ctermbg=NONE cterm=NONE
@@ -2644,7 +2644,7 @@ if &background == 'light'
       hi Error cterm=reverse
       hi ErrorMsg cterm=NONE
       hi Function cterm=NONE
-      hi MatchParen cterm=underline
+      hi MatchParen cterm=NONE
       hi ModeMsg cterm=NONE
       hi MoreMsg cterm=NONE
       hi PmenuSel cterm=NONE
@@ -3244,7 +3244,7 @@ if &background == 'light'
     hi Label ctermfg=Red ctermbg=NONE cterm=NONE
     hi LineNr ctermfg=Grey ctermbg=NONE cterm=NONE
     hi Macro ctermfg=Cyan ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=NONE ctermbg=White cterm=bold,underline
+    hi MatchParen ctermfg=NONE ctermbg=White cterm=bold
     hi ModeMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi NonText ctermfg=Grey ctermbg=NONE cterm=NONE
@@ -3299,7 +3299,7 @@ if &background == 'light'
       hi Directory cterm=NONE
       hi ErrorMsg cterm=NONE
       hi Function cterm=NONE
-      hi MatchParen cterm=underline
+      hi MatchParen cterm=NONE
       hi ModeMsg cterm=NONE
       hi MoreMsg cterm=NONE
       hi Question cterm=NONE
@@ -3387,7 +3387,7 @@ if &background == 'light'
     hi Label ctermfg=Red ctermbg=NONE cterm=NONE
     hi LineNr ctermfg=Black ctermbg=NONE cterm=NONE
     hi Macro ctermfg=Cyan ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=Black ctermbg=NONE cterm=bold,underline
+    hi MatchParen ctermfg=Black ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=Yellow ctermbg=NONE cterm=bold
     hi NonText ctermfg=Black ctermbg=NONE cterm=NONE
@@ -3442,7 +3442,7 @@ if &background == 'light'
       hi Directory cterm=NONE
       hi ErrorMsg cterm=NONE
       hi Function cterm=NONE
-      hi MatchParen cterm=underline
+      hi MatchParen cterm=NONE
       hi ModeMsg cterm=NONE
       hi MoreMsg cterm=NONE
       hi Question cterm=NONE
@@ -3530,7 +3530,7 @@ if &background == 'light'
     hi Label term=NONE
     hi LineNr term=reverse
     hi Macro term=NONE
-    hi MatchParen term=bold,underline
+    hi MatchParen term=bold
     hi ModeMsg term=NONE
     hi MoreMsg term=NONE
     hi NonText term=NONE
