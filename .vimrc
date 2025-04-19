@@ -1,6 +1,6 @@
 set nu rnu
 set termguicolors
-colorscheme catppuccin_mocha
+colorscheme onedark
 syntax on
 filetype plugin indent on
 set tabstop=4
