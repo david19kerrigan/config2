@@ -13,4 +13,5 @@ set fillchars=eob:\
 set laststatus=2
 set clipboard=unnamedplus
 let @c='gg"+yG'''''
+let c_no_curly_error=1
 nmap ZX ZQ
