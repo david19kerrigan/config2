@@ -10,7 +10,6 @@ set softtabstop=4
 set expandtab
 set noswapfile
 set fillchars=eob:\ 
-set laststatus=2
 set clipboard=unnamedplus
 let @c='gg"+yG'''''
 nmap ZX ZQ
