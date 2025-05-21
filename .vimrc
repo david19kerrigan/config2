@@ -14,4 +14,3 @@ set clipboard=unnamedplus
 let @c='gg"+yG'''''
 nmap ZX ZQ
 let mapleader = " "
-nnoremap <leader>r :!clear ; make<CR>
