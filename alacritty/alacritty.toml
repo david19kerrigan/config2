@@ -2,15 +2,13 @@
 startup_mode = "Maximized"
 
 [font]
-normal = { family = "IBM Plex Mono" }
-size = 16
+normal = { family = "Terminus", style = "Bold" }
+size = 18
 
-# Default colors
 [colors.primary]
 background = '#002b36'
 foreground = '#839496'
 
-# Normal colors
 [colors.normal]
 black   = '#073642'
 red     = '#dc322f'
@@ -21,7 +19,6 @@ magenta = '#d33682'
 cyan    = '#2aa198'
 white   = '#eee8d5'
 
-# Bright colors
 [colors.bright]
 black   = '#002b36'
 red     = '#cb4b16'
