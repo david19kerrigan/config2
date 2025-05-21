@@ -26,6 +26,7 @@ export XDG_STATE_HOME=$HOME/.local/state
 set -o vi
 export EDITOR="vimx"
 menu='fzy -l 30'
+HISTFILESIZE=10000
 
 alias handle_res='test -d "$selected_res" && cd "$selected_res" ; \
     test -f "$selected_res" && cd $(dirname "$selected_res") && $EDITOR $(basename "$selected_res")'
@@ -56,6 +57,7 @@ alias ba='echo $PWD >> "$XDG_DATA_HOME"/marks ; sort "$XDG_DATA_HOME"/marks | un
 alias bj='selected=$(cat "$XDG_DATA_HOME"/marks | $menu) && cd "$selected"'
 alias be='$EDITOR "$XDG_DATA_HOME"/marks'
 alias ce='$EDITOR "$HOME"/.bashrc ; source "$HOME"/.bashrc'
+alias ve='$EDITOR ~/.vimrc'
 alias c='cd'
 alias v='$EDITOR'
 alias l='ls -A --color=auto -1 -p'
