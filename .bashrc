@@ -65,6 +65,7 @@ alias ga='git add --all'
 alias gu='git pull'
 alias gb="git branch"
 alias gc="git checkout \$(git branch | $menu)"
-alias up="sudo dnf upgrade --refresh -y"
+alias up="sudo dnf5 upgrade --refresh -y"
 alias te="tmux attach || tmux new -s yo"
+alias dnf="dnf5"
 
