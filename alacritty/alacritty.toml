@@ -4,8 +4,8 @@ import = [
 ]
 
 [font]
-normal = { family = "Jet Brains Mono", style = "Semibold" }
-size = 16
+normal = { family = "Jet Brains Mono", style = "Regular" }
+size = 17
 
 [window]
 startup_mode = "Maximized"
