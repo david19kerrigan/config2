@@ -1,11 +1,11 @@
 [general]
 import = [
-"./solarized.toml",
+"./gruvbox.toml",
 ]
 
 [font]
-normal = { family = "Terminus", style = "Bold" }
-size = 18
+normal = { family = "Jet Brains Mono", style = "Semibold" }
+size = 16
 
 [window]
 startup_mode = "Maximized"
