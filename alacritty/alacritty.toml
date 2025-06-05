@@ -1,7 +1,10 @@
 [general]
 import = [
-"./gruvbox.toml",
+"./catppuccin-mocha.toml",
 ]
+
+[env]
+term = "xterm-256color"
 
 [font]
 normal = { family = "Jet Brains Mono", style = "Regular" }
