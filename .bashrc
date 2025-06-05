@@ -27,6 +27,7 @@ set -o vi
 export EDITOR="vimx"
 menu='fzy -l 30'
 HISTFILESIZE=10000
+PS1='[\u@\h \w]\n\$ '
 
 alias handle_res='test -d "$selected_res" && cd "$selected_res" ; \
     test -f "$selected_res" && cd $(dirname "$selected_res") && $EDITOR $(basename "$selected_res")'
